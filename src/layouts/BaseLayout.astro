@@ -1,0 +1,17 @@
+---
+import "../styles/global.css"
+---
+
+<html lang="en" class="selection:bg-secondary selection:text-secondary">
+
+  <body class="bg-primary">
+    <slot />
+    <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+    ></script>
+    <script type="text/javascript">
+      AOS.init({
+        once: true, // animation
+      });
+    </script>
+  </body>
+</html>
