@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import ss1 from "../assets/ss1.png";
+import ss2 from "../assets/ss2.png";
+import ss3 from "../assets/ss3.png";
+---
+
+<section class="bg-primary">
+  <div class="px-8 2xl:max-w-7xl mx-auto py-6">
+    
+    <div class="mt-6 space-y-2">
+      <div class="h-0.5 bg-secondary"></div>
+      <h3 class="font-bold">Projects</h3>
+    </div>
+
+    <!-- Grid: images left, text right -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+
+      <!-- images -->
+      <div class="space-y-8">
+        <Image src={ss1} alt="Screenshot 1" class="w-150 rounded-md" />
+        <Image src={ss2} alt="Screenshot 2" class="w-150 rounded-md" />
+      </div>
+
+      <!-- text -->
+      <div class="flex flex-col items-end space-y-8">
+        <p class="text-3xl lg:text-2xl max-w-xl">
+          I developed a web application integrating Spotify's Web API and Playback SDK, 
+          enabling users to discover similar songs with real-time music playback controls 
+          and dynamic playlist management.
+        </p>
+
+        <p class="text-3xl lg:text-2xl max-w-xl">
+          It works via an intelligent recommendation system using Spotify's audio features 
+          and Reccobeats API to calculate similarity scores based on Key, BPM & other features.
+        </p>
+
+        <Image src={ss3} alt="Screenshot 3" class="w-150 rounded-md mt-6.5" />
+      </div>
+
+    </div>
+
+  </div>
+</section>
