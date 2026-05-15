@@ -33,36 +33,80 @@ import ss3 from "../assets/ss3.png";
     <!-- images left, text right -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-18">
 
+      <!-- text -->
+      <div 
+        class="flex flex-col space-y-8"
+        data-aos="fade-up"
+       data-aos-duration="2000"
+      >
+        <p class="text-3xl lg:text-3xl max-w-xl font-bold">
+          Spotify Music Finder
+        </p>
+
+        <p class="text-3xl lg:text-2xl max-w-xl font-semibold">
+          Problem
+        </p>
+
+        <p class="text-3xl lg:text-2xl max-w-xl">
+          When DJing, you spend 80% of the time finding and downloading music to 
+          play rather than actually DJing. This can be a tedious process as UIs like Spotify
+          or Soundcloud aren't designed for DJs; they hide important metadata like key, bpm and record label. 
+          Services designed for DJs like beatport are expensive and have a limited library of music.
+        </p>
+
+        <p class="text-3xl lg:text-2xl max-w-xl">
+          I saw this as an opportunity to build my own take on music discovery.
+        </p>
+
+        <p class="text-3xl lg:text-2xl max-w-xl font-semibold">
+          Solution
+        </p>
+
+        <p class="text-3xl lg:text-2xl max-w-xl">
+          I developed a web application enabling users to discover music showing the metadata they need and
+          with more searching algorithms whilst retaining the large music library of Spotify.
+        </p>
+
+        <p class="text-3xl lg:text-2xl max-w-xl">
+          It works via the Spotify API and Playback SDK to utilise live playback and Spotify's large library.
+          The Spotify API provide the valuable metadata which is normally hidden to the user. This metadata
+          would be used to search for similar songs using algorithms like cosine similarity.
+        </p>
+
+        <p class="text-3xl lg:text-2xl max-w-xl font-semibold">
+          Reflection
+        </p>
+
+        <p class="text-3xl lg:text-2xl max-w-xl">
+          However, when I was nearing the end of the project Spotify depricated fundamental API endpoints
+          that I used to get the metadata of tacks due AIs being trained on them. 
+          
+          So I had to implement another external API being the Reccobeat API.
+          This API's library wasn't merely as large as Spotify's which taught me an 
+          important lesson of not relying on external APIs for core functionality of your project as they can 
+          change or go down at any time.
+        </p>
+
+        <p class="text-3xl lg:text-3xl max-w-xl font-bold">
+          Guitar Tabs Generator
+        </p>
+
+        <p class="text-3xl lg:text-2xl max-w-xl">
+          Work in progress...
+        </p>
+
+      </div>
+
       <!-- images -->
       <div 
         class="space-y-8"
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <Image src={ss1} alt="Screenshot 1" class="w-150 rounded-md" />
-        <Image src={ss2} alt="Screenshot 2" class="w-150 rounded-md" />
+        <Image src={ss1} alt="Screenshot 1" class="w-150 rounded-md pt-40" />
+        <Image src={ss2} alt="Screenshot 2" class="w-150 rounded-md pt-10" />
+        <Image src={ss3} alt="Screenshot 3" class="w-150 rounded-md pt-10" />
       </div>
-
-      <!-- text -->
-      <div 
-        class="flex flex-col items-end space-y-8"
-        data-aos="fade-up"
-       data-aos-duration="2000"
-      >
-        <p class="text-3xl lg:text-2xl max-w-xl">
-          I developed a web application integrating Spotify's Web API and Playback SDK, 
-          enabling users to discover similar songs with real-time music playback controls 
-          and dynamic playlist management.
-        </p>
-
-        <p class="text-3xl lg:text-2xl max-w-xl">
-          It works via an intelligent recommendation system using Spotify's audio features 
-          and Reccobeats API to calculate similarity scores based on Key, BPM & other features.
-        </p>
-
-        <Image src={ss3} alt="Screenshot 3" class="w-150 rounded-md mt-6.5" />
-      </div>
-
     </div>
 
   </div>
