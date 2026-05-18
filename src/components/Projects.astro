@@ -1,8 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-import ss1 from "../assets/ss1.png";
-import ss2 from "../assets/ss2.png";
-import ss3 from "../assets/ss3.png";
+import similar from "../assets/similar.png";
+import home from "../assets/home.png";
+import tracklist from "../assets/tracklist.png";
 ---
 
 <section class="bg-primary">
@@ -44,7 +44,7 @@ import ss3 from "../assets/ss3.png";
         </p>
 
         <p class="text-3xl lg:text-2xl max-w-xl font-semibold">
-          Problem
+          The Problem
         </p>
 
         <p class="text-3xl lg:text-2xl max-w-xl">
@@ -55,11 +55,11 @@ import ss3 from "../assets/ss3.png";
         </p>
 
         <p class="text-3xl lg:text-2xl max-w-xl">
-          I saw this as an opportunity to build my own take on music discovery.
+          I saw this as an opportunity to build my own take on music discovery and learn how searching algorithms work.
         </p>
 
         <p class="text-3xl lg:text-2xl max-w-xl font-semibold">
-          Solution
+          My Solution 
         </p>
 
         <p class="text-3xl lg:text-2xl max-w-xl">
@@ -69,7 +69,7 @@ import ss3 from "../assets/ss3.png";
 
         <p class="text-3xl lg:text-2xl max-w-xl">
           It works via the Spotify API and Playback SDK to utilise live playback and Spotify's large library.
-          The Spotify API provide the valuable metadata which is normally hidden to the user. This metadata
+          The Spotify API provides the valuable metadata which is normally hidden to the user. This metadata
           would be used to search for similar songs using algorithms like cosine similarity.
         </p>
 
@@ -79,8 +79,8 @@ import ss3 from "../assets/ss3.png";
 
         <p class="text-3xl lg:text-2xl max-w-xl">
           However, when I was nearing the end of the project, Spotify depricated fundamental API endpoints
-          that I used to get the metadata of songs. This was due to people abusing the TOS and using the API to train AIs and
-          also due to Spotify a few months later their own DJ tool called Spotify DJ.
+          that I used to get the metadata of songs. This was due to people abusing the TOS by using the API to train AIs and
+          also due to Spotify a few months later releasing their own DJ tool called Spotify DJ.
         </p>
 
         <p class="text-3xl lg:text-2xl max-w-xl">
@@ -105,9 +105,9 @@ import ss3 from "../assets/ss3.png";
         data-aos="fade-up"
         data-aos-duration="1500"
       >
-        <Image src={ss1} alt="Screenshot 1" class="w-150 rounded-md pt-45" />
-        <Image src={ss2} alt="Screenshot 2" class="w-150 rounded-md pt-20" />
-        <Image src={ss3} alt="Screenshot 3" class="w-150 rounded-md pt-20" />
+        <Image src={home} alt="Home Page" class="w-150 rounded-md pt-45" />
+        <Image src={tracklist} alt="Playlist Page" class="w-150 rounded-md pt-20" />
+        <Image src={similar} alt="Similar Tracks Page" class="w-150 rounded-md pt-20" />
       </div>
     </div>
 
